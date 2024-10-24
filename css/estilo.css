@@ -1,0 +1,290 @@
+/*----------------------------GENERAL ------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cinzel;
+    line-height: 1.6;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+
+/*-------------SECCIÓN NAV BARRA LOGO LINKS Y RESPONSIVE -----------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2c0c0;
+    color: #000000;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 130px; /* Ajusta este valor según el tamaño */
+    margin-left: 90px; /* Espacio entre el logo y los links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 200px;
+}
+
+.nav-links li {
+    margin-left: 50px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.menu-toggle .bar {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+
+/*------------------------RESPONSIVE PARA EL MENU "HAMBURGUESA"------------------------------*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Esto hace que el menú se despliegue justo debajo del nav */
+        left: 0;
+        background-color: #c1c1c1;
+        text-align: center;
+    }
+
+    .navbar{
+        background-color: #c2c0c0;
+        color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+.indeximagen {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho */
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    background-color: #c0cedd;
+    padding: 70px;
+    border-radius: 40px;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
+
+
+}
+
+.box img {
+    margin-left: 700px;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center; /* Mueve el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro del footer */
+}
+
+
+/*-------------------------------------SECCIÓN NOSOTROS-----------------------------------*/
+
+/* Alinear todo en una fila horizontal */
+.row_nosotros {
+    display: flex;
+    background:  #c0cedd;
+    justify-content: center; /* Alinea los elementos al centro sin demasiada separación */
+    align-items: center; /* Alinear verticalmente */
+    gap: 140px; /* Espacio entre las imágenes */
+    padding: 50px; /* Espacio interno ampliado */
+    border-radius: 40px; /* Bordes redondeados */
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
+    width: 90%; /* Asegura que el contenedor ocupe todo el ancho */
+    max-width: 1500px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+    overflow: visible; /* Asegura que nada se oculte */
+    
+}
+
+.row_nosotros a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Cada div dentro de la fila */
+.row_nosotros div {
+    flex-shrink: 0; /* Evitar que los divs se reduzcan de tamaño */
+    text-align: center;
+
+}
+
+.row_nosotros img {
+    width: 135px !important;
+    height: 135px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 !important;
+}
+
+/* ------------QUERY SECCIÓN NOSOTROS------------------------ */
+@media (max-width: 768px) {
+    .row_nosotros {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center; /* Centrar las imágenes en móviles */
+        gap: 30px; /* Aumentar el espacio entre las imágenes */
+        padding: 20px; /* Reducir el padding para móviles */
+    }
+
+    /* Ajustar el ancho de los divs e imágenes en móviles */
+    .row_nosotros div {
+        width: 80%; /* Ajustar el ancho de cada imagen al 80% del contenedor en móviles */
+    }
+
+    .row_nosotros img {
+        width: 100%; /* Asegurarse de que las imágenes ocupen todo el ancho del contenedor */
+        height: auto; /* Dejar que la altura se ajuste proporcionalmente */
+    }
+}
+
+
+
+/*-----------------------------------SECCION FOOTER--------------------------*/
+/* ESTILO GENERAL!! */
+footer {
+    color: #000000;
+    background-color: #4b4a4a95;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* CONTENIDO EN VISTA PANTALLA COMPLETA */
+.footer-content {
+    display: flex;
+    justify-content: center; /* CENTRA LOS ELEMENTOS */
+    align-items: center; /* ALINEA VERTICALMENTE LOS ELEMENTOS */
+    padding: 15px 20px;
+    gap: 200px;
+    flex-wrap: nowrap;
+}
+
+/* ESTILOS DE TEXTOS */
+.text-info {
+    display: flex;
+    flex-direction: column; /* APILAS LAS LINEAS VERTICALES */
+    align-items: center; /* CENTRA EL TEXTO */
+    margin-right: 20px; /* ESPACIO ENTRE EL TEXTO Y LOGO */
+}
+
+p {
+    color: #000000;
+}
+
+.materia {
+    margin: 0 30px 0 0; /* MARGEN QUE SEPARA DE #CURSO */
+}
+
+.curso, .grupo {
+    margin: 0 15px; /* MARGEN QUE SEPARA AMBOS */
+}
+
+#derechos-reservados {
+    margin: 10px 0 0 0; /* SEPARACION ENTRE LAS LINEAS */
+}
+
+/* PARA EL LOGO DEL FOOTER*/
+.logo-footer {
+    max-height: 60px;
+}
+
+.logo-footer img {
+    max-height: 60px;
+}
+
+/*------------------------ESTILOS RESPONSIVOS PARA EL FOOTER ------------------------------*/
+@media (max-width: 790px) {
+    .footer-content {
+        flex-direction: column; /* APILA TODO VERTICALEMNTE */
+        align-items: center; /* CENTRA TODO LOS ITEMS */
+        text-align: center; /* CENTRA EL TEXTO */
+    }
+    
+    #derechos-reservados {
+        order: 1; /* Mueve Derechos Reservados a la primera posición */
+        margin-bottom: 20px; /* Margen inferior */
+        text-align: center; /* Centra el texto */
+    }
+    
+    #materia {
+        order: 2; /* Mantiene debajo de Derechos Reservados */
+        display: inline-block; /* Los coloca en la misma línea */
+        text-align: left; /* Centra el texto */
+        margin-left: 60px;
+
+    }
+    
+    #curso, #grupo {
+        order: 3; /* Mueve curso y grupo a la tercera posición */
+        display: inline-block; /* Los coloca en la misma línea */
+        text-align: left; /* Centra el texto */
+        margin: 3px;
+        margin-right: 60px;
+        margin-top: 30px;
+    }
+
+    .logo-footer {
+        order: 4; /* Mueve el logo al final */
+        text-align: center; /* Centra el logo */
+        margin-left: -15px;
+        margin-right: 30px;
+        margin-top: -150px;
+    }
+}

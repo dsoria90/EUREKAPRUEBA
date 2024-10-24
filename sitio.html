@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO 8</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html"><strong>INICIO</strong></a></li>
+            <li><a href="proyecto.html"><strong>PROYECTO</strong></a></li>
+            <li><a href="avances.html"><strong>AVANCES</strong></a></li>
+            <li><a href="integrantes.html"><strong>INTEGRANTES</strong></a></li>
+            <li><a href="sitio.html"><strong>SITIO DEL PROYECTO</strong></a></li>
+        </ul>
+    </nav>
+    <main>
+        <img src="#" alt="indeximagen" class="indeximagen"/>
+        <br><br>
+        <div class="contenedor">
+            <div class="box">
+                <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci velit earum, recusandae libero consequatur magnam consectetur 
+                    dolore autem praesentium laborum exercitationem nisi voluptas sit illum debitis! Dolorum, odio vitae.</strong></p>
+                <br>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid py-3 mt-5">
+        <div class="footer-content">
+            <div class="text-info">
+                <p id="materia"><strong>Materia:</strong> Diseño y desarrollo Web &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="curso"><strong>Curso:</strong> 2688</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="grupo"><strong>Grupo</strong> 8</span></p>
+                <p id="derechos-reservados">Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+            </div>
+            <div class="logo-footer">
+                <img src="img/uade.png" alt="Logo">
+            </div>
+        </div>
+    </footer>  
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

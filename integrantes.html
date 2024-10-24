@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO 8</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html"><strong>INICIO</strong></a></li>
+            <li><a href="proyecto.html"><strong>PROYECTO</strong></a></li>
+            <li><a href="avances.html"><strong>AVANCES</strong></a></li>
+            <li><a href="integrantes.html"><strong>INTEGRANTES</strong></a></li>
+            <li><a href="sitio.html"><strong>SITIO DEL PROYECTO</strong></a></li>
+        </ul>
+    </nav>
+    <img src="img/Confia.png" alt="indeximagen" class="indeximagen"/>
+
+    <main>
+        <main>
+            <section class="container_main_nosotros">
+                <!-- Mover el título fuera de la fila de las imágenes -->
+                <div class="row_titulo_nosotros">
+                    <div class="col-md-12 text-center">
+                        <h1>Nosotros</h1>
+                    </div>
+                </div>
+                <div class="row_nosotros">
+                    <div class="col-md-2 text-center">
+                        <img src="img/fotodie.png" alt="Foto Personal" class="img-fluid " ><br><br>
+                        <a href="https://dsoria90.github.io/portfolio_final/" target="_blank"><strong>Diego Soria</strong><br><br><br>Ir al portfolio</a><br>
+                        <a href="https://www.figma.com/design/lVQVo6FVfdJx6RgS1k2hJg/PORTFOLIO?node-id=1-1178&node-type=section&t=RbPrLhjHnQSmFF8U-0" target="_blank"> Ir a Prototipo</a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="img/fotokate.png" alt="Foto Personal" class="img-fluid "><br><br>
+                        <a href="PortafolioKS/Index.html" target="_blank"><strong>Katherina Steinbrecher</strong><br><br><br>Ir al portfolio</a><br>
+                        <a href="https://www.figma.com/design/KU5h6JW4WUgWtRvMErqtrZ/Portafolio-KS?node-id=0-1&node-type=canvas&t=CjfSjZERmMHk0nhw-0">Ir a Prototipo</a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="img/fotomil.jpeg" alt="Foto Personal" class="img-fluid "><br><br>
+                        <a href="https://milagrosgordillo1.github.io/portafolio1/index.html" target="_blank"><strong>Milagros Gordillo</strong><br><br><br>Ir al portfolio</a><br>
+                        <a href="https://www.figma.com/design/EcrIeO4LuWgnght7QnFMmo/Untitled?node-id=0-1&node-type=canvas&t=bUb1JnPO5tD6V6eC-0" target="_blank">Ir a Prototipo</a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="img/fotose.jpeg" alt="Foto personal" class="img-fluid "><br><br>
+                        <a href="https://sergio-andol.github.io/Portfolio/" target="_blank"><strong>Sergio Andolcetti</strong><br><br><br>Ir al portfolio</a><br>
+                        <a href="https://www.figma.com/design/VoSCK4MGS70wM7zzdKCOrA/PortFolio?node-id=0-1&node-type=canvas&t=DdnmPqZTwXadU4YH-0" target="_blank">Ir a Prototipo</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>    
+
+    <footer class="container-fluid py-3 mt-5">
+        <div class="footer-content">
+            <div class="text-info">
+                <p id="materia"><strong>Materia:</strong> Diseño y desarrollo Web &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="curso"><strong>Curso:</strong> 2688</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="grupo"><strong>Grupo</strong> 8</span></p>
+                <p id="derechos-reservados">Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+            </div>
+            <div class="logo-footer">
+                <img src="img/uade.png" alt="Logo">
+            </div>
+        </div>
+    </footer>  
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
